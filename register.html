@@ -1,0 +1,168 @@
+<!-- Cecilia Santiago   
+     March 3, 2021
+     Team 3
+     Assignment Day 1 - 7
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- Bootstrap link -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- CSS file for index.html -->
+    <link rel="stylesheet" href="css/mystyler.css">
+
+    <!-- JavaScript link -->
+    <script src="js/myjsscript.js"></script>
+
+</head>
+
+<body class="back-image">
+
+    <header style="width:50%;">
+        <h5 class="logo-text">Travel Experts</h5>
+        <img class="img-logor" width=15% src="images/IMG_20190731_095616276.jpg"
+            alt="Picture of corals from Cannon Beach, Astoria">
+    </header>
+
+    <form id="regform">
+
+        <h1 style="text-align:center;"><strong>Create an account</strong></h1>
+
+        <div class="form-row">
+            <div class="grp-form col-md-6">
+                <label for="fname">First Name</label>
+                <input type="text" class="form-control" id="fname" placeholder="First Name" required>
+                <small id="msg" style="display:none;">Enter First Name here.</small>
+            </div>
+            <div class="grp-form col-md-6">
+                <label for="lname">Last Name</label>
+                <input type="text" class="form-control" id="lname" placeholder="Last Name" required>
+                <small id="msg" style="display:none;">Enter Last Name here.</small>
+            </div>
+        </div>
+
+        <div class="grp-form">
+            <label for="addr1">Address1 </label>
+            <input type="text" class="form-control" id="addr1" placeholder="1234 Main St" required>
+            <small id="msg" style="display:none;">Enter Main address here.</small>
+        </div>
+        <div class="grp-form">
+            <label for="addr2">Address 2</label>
+            <input type="text" class="form-control" id="addr2" placeholder="Apt, Unit or floor" required>
+            <small id="msg" style="display:none;">Enter additional address here.</small>
+        </div>
+        <div class="form-row">
+            <div class="grp-form col-md-6">
+                <label for="city">City</label>
+                <input type="text" class="form-control" id="city" placehholder="City" required>
+                <small id="msg" style="display:none;">Enter City here.</small>
+            </div>
+            <div class="grp-form col-md-4">
+                <label for="prov">Province</label>
+                <select id="prov" class="form-control">
+                    <option selected required>Select Province...</option>
+                    <option>AB</option>
+                    <option>BC</option>
+                    <option>MB</option>
+                    <option>NB</option>
+                    <option>NL</option>
+                    <option>NT</option>
+                    <option>NS</option>
+                    <option>NU</option>
+                    <option>ON</option>
+                    <option>PE</option>
+                    <option>QC</option>
+                    <option>SK</option>
+                    <option>YT</option>
+                </select>
+                <small id="msg" style="display:none;">Select Province here.</small>
+            </div>
+            <div class="grp-form col-md-2">
+                <label for="post">Postal</label>
+                <input type="text" class="form-control" id="post" placeholder="H1H 0H0"
+                    pattern="^[A-Z]\d[A-Z] ?\d[A-Z]\d$" required>
+                <small id="msg" style="display:none;">Enter Postal here.</small>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="grp-form col-md-6">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Email" required>
+                <small id="msg" style="display:none;">Enter Email here.</small>
+            </div>
+
+            <div class="grp-form col-md-3">
+                <label for="phone">Telephone:</label>
+                <input type="tel" class="form-control" id="phone" placeholder="123-456-7890"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <small id="msg" style="display:none;">Enter Phone here.</small>
+            </div>
+
+            <div class="grp-form col-md-3">
+                <label for="bday">Birthdate:</label>
+                <input type="date" class="form-control" id="bday" placeholder="yyyy-mm-dd" required>
+                <small id="msg" style="display:none;">Enter Birthdate here.</small>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="grp-form col-md-4">
+                <label for="usrname">UserName</label>
+                <input type="text" class="form-control" id="usrname" placeholder="UserName" required>
+                <small id="msg" style="display:none;">Enter UserName here.</small>
+            </div>
+
+            <div class="grp-form col-md-4">
+                <label for="passwd">Password</label>
+                <input type="password" class="form-control" id="passwd" placeholder="Password" required>
+                <small id="msg" style="display:none;">Enter Password here</small>
+            </div>
+
+            <div class="grp-form col-md-4">
+                <label for="passwd">Confirm Password</label>
+                <input type="password" class="form-control" id="passwd" placeholder="Confirm Password" required>
+                <small id="msg" style="display:none;">Enter Same Password again here.</small>
+            </div>
+
+        </div>
+
+        <div class="form-row">
+            <div class="grp-form col-md-4">
+            </div>
+
+            <div class="grp-form col-md-4">
+                <button style="margin-bottom: 20px;" type="reset" class="btn btn-primary"
+                    onclick="Confirm_Buttons()">Reset</button>
+
+                <button style="margin-bottom: 20px;" type="submit" class="btn btn-primary"
+                    onclick="Confirm_Buttons()">Submit</button>
+            </div>
+        </div>
+    </form>
+
+    <h6 style="text-align: right;">Mayon Volcano, Philippines,
+        <a style="color:teal;" href="https://commons.wikimedia.org/wiki/File:Mayon_Volcano_1.jpg">Lei from
+            Las Pinas,
+            Philippines</a>,
+        <a style="color:teal;" href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>, via Wikimedia
+    </h6>
+    <h6>&copy 2021 Travel Experts Assignments</h6>
+
+
+    <script>
+        LoadthePage();
+    </script>
+</body>
+
+</html>

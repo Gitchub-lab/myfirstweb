@@ -1,0 +1,76 @@
+
+.back-image {
+    background-image: url("../images/Mayon_Volcano_1.jpg");  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment:fixed;  
+}
+
+.img-logoc {
+    float:left; 
+    margin: auto;  
+    border: 2px solid maroon;   
+
+}
+
+.logo-text { 
+    font-family: 'Akaya Telivigala', cursive;  
+    text-align:center; 
+    width:15%;    
+    font-size: 1vw; 
+    color:maroon;         
+    white-space: nowrap;
+}
+
+
+#tablegrid {
+    font-family: 'Abel', sans-serif;  
+    padding: 5px;    
+    color:maroon; 
+    display: flex;
+    margin: 0px; 
+    width: 100vw;
+    height: 75vh;
+    justify-content: center;
+    align-items: center;
+}
+
+table {  
+    border-radius: 10px;
+    border-spacing: 15px;      
+ 
+}
+
+
+td {  
+    border-radius: 10px;
+    border-spacing: 15px;      
+    border: 1px solid black;
+}
+
+
+h2{
+    padding-left: 10px;
+    padding-right: 20px;
+    font-size: 2vw;
+    white-space: nowrap;
+}
+
+tr:nth-child(even)  {
+    background-color:rgb(161, 192, 248);
+}
+
+tr:nth-child(odd)  {
+    background-color:rgb(114, 160, 245); 
+    
+}
+
+h6 {        
+    font-family: 'Abel', sans-serif;
+    font-size: 12px;
+    color:whitesmoke;   
+    padding-bottom: 20px; 
+    white-space: nowrap;
+    
+}

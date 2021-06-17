@@ -1,0 +1,42 @@
+
+.back-image {
+    background-image: url("../images/Mayon_Volcano_1.jpg");  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment:fixed;  
+}
+
+#imgtable{    
+    color:maroon;
+    text-align: center;
+    margin-top:50px;  
+
+}
+    
+.logo-text { 
+    font-family: 'Akaya Telivigala', cursive;
+    text-align:center; 
+    width:15%;   
+    font-size: 1vw; 
+    color:maroon;         
+    white-space: nowrap; 
+    margin-bottom: 5px;
+    
+}
+
+
+.img-logog {    
+    margin-left: 4%;
+    text-align:center; 
+    border: 2px solid maroon; 
+}
+
+h6 {        
+    font-family: 'Abel', sans-serif;
+    font-size: 12px;
+    color:whitesmoke;   
+    padding-bottom: 20px; 
+    white-space: nowrap;
+    
+}
