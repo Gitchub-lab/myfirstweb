@@ -1,6 +1,7 @@
 # myfirstweb
 
 My first published website
+https://myfirstpages.azurewebsites.net/
 
 Assignment 1-7 done at SAIT.
 
